@@ -3,23 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title> Página de Cadastro da Escola</title>
+    <link href='CSS/estilo.css' type='text/css' rel='stylesheet'/>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   </head>
   <body>
     <main>
+      <div class= "container">
+      <div class="form-group">
       <form action="http://localhost:5000/escola" method='POST'>
 
         <label for= 'nome'> Nome da escola: </label>
-        <input type = 'text' name = 'nome'><br>
+        <input type = 'text' class="form-control" name = 'nome'>
+      </div>
 
+      <div class="form-group">
         <label for= 'logradouro'> Logradouro:</label>
-        <input type= 'text' name= 'logradouro'><br>
+        <input type= 'text' class="form-control" name= 'logradouro'>
 
+      </div>
+
+      <div class="form-group">
         <label for= 'cidade'> Cidade:</label>
-        <input type= 'text' name= 'cidade'><br>
+        <input type= 'text' class="form-control" name= 'cidade'>
 
-        <input type= 'submit' name='cadastrar' value= 'Cadastrar'>
+      </div>
+
+
+      <div class="form-group">
+        <input type= 'submit'
+          class="btn btn-primary btn-lg btn-block"
+          name='cadastrar'
+          value= 'Cadastrar'>
+
+      </div>
 
       </form>
+    </div>
     </main>
 
   </body>
